@@ -1,0 +1,26 @@
+{
+  "name": "@zooizooi/asset-loader",
+  "description": "Another asset loader",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/AssetLoader.js",
+  "types": "./dist/AssetLoader.d.ts",
+  "exports": {
+    "loaders/": "./dist/loaders/*"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/three": "^0.162.0",
+    "@zooizooi/eslint-config": "^1.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.7.3"
+  },
+  "dependencies": {
+    "three": "^0.162.0"
+  }
+}
