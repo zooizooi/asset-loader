@@ -6,6 +6,9 @@
   "type": "module",
   "main": "./dist/AssetLoader.js",
   "types": "./dist/AssetLoader.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "exports": {
     "loaders/": "./dist/loaders/*"
   },
