@@ -6,7 +6,7 @@ export const STATUS_NOT_LOADED = 'NOT_LOADED';
 export const STATUS_LOADING = 'LOADING';
 export const STATUS_LOADED = 'LOADED';
 
-type Loader = new () => void;
+type Loader = new () => any;
 
 export const loaders: { [type: string]: Loader } = {};
 
