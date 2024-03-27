@@ -1,6 +1,4 @@
-import AssetLoader from '../lib/AssetLoader';
-import GltfLoader from '../lib/loaders/GltfLoader';
-import ImageLoader from '../lib/loaders/ImageLoader';
+import AssetLoader, { GltfLoader, ImageLoader } from '../lib/AssetLoader';
 
 import assets from './assets';
 

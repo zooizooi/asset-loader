@@ -2,6 +2,9 @@ import FileLoader from './FileLoader';
 import ListLoader from './ListLoader';
 import Logger from './Logger';
 
+import GltfLoader from './loaders/GltfLoader';
+import ImageLoader from './loaders/ImageLoader';
+
 export const STATUS_NOT_LOADED = 'NOT_LOADED';
 export const STATUS_LOADING = 'LOADING';
 export const STATUS_LOADED = 'LOADED';
@@ -61,3 +64,5 @@ export default class AssetLoader {
         this.assets.set(asset.name, asset);
     }
 }
+
+export { GltfLoader, ImageLoader };
