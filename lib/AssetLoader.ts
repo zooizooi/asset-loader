@@ -4,6 +4,7 @@ import Logger from './Logger';
 
 import GltfLoader from './loaders/GltfLoader';
 import ImageLoader from './loaders/ImageLoader';
+import TextureLoader from './loaders/TextureLoader';
 
 export const STATUS_NOT_LOADED = 'NOT_LOADED';
 export const STATUS_LOADING = 'LOADING';
@@ -65,4 +66,4 @@ export default class AssetLoader {
     }
 }
 
-export { GltfLoader, ImageLoader };
+export { GltfLoader, ImageLoader, TextureLoader };
