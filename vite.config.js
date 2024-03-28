@@ -6,11 +6,7 @@ export default defineConfig({
     publicDir: false,
     build: {
         lib: {
-            entry: [
-                resolve(__dirname, 'lib/AssetLoader.ts'),
-                resolve(__dirname, 'lib/loaders/GltfLoader.ts'),
-                resolve(__dirname, 'lib/loaders/ImageLoader.ts')
-            ],
+            entry: resolve(__dirname, 'lib/AssetLoader.ts'),
             name: 'AssetLoader',
             formats: ['es']
         },
