@@ -8,6 +8,7 @@ export default defineConfig({
         lib: {
             entry: resolve(__dirname, 'lib/AssetLoader.ts'),
             name: 'AssetLoader',
+            fileName: 'AssetLoader',
             formats: ['es']
         },
         rollupOptions: {
