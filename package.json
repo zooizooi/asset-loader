@@ -1,7 +1,7 @@
 {
   "name": "@zooizooi/asset-loader",
   "description": "Another asset loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/AssetLoader.js",
   "types": "./dist/AssetLoader.d.ts",
