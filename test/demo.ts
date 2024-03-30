@@ -19,6 +19,6 @@ const file = {
 assetLoader.load(file);
 
 assetLoader.loadList(assets).then((list) => {
-    // console.log('list loaded', list);
-    console.log(assetLoader.assets);
+    const image = assetLoader.get('image');
+    console.log(image?.data);
 });

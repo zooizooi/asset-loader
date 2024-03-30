@@ -1,4 +1,4 @@
-import { Asset } from './asset-loader/AssetLoader';
+import { Asset } from '/lib/AssetLoader';
 
 const models: Asset[] = [
     {
@@ -10,7 +10,7 @@ const models: Asset[] = [
 
 const textures: Asset[] = [
     {
-        name: 'texture',
+        name: 'image',
         path: './texture.png',
         type: 'image'
     },
