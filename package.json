@@ -9,8 +9,8 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build"
+    "dev": "vite -c ./vite.config-dev.js",
+    "build": "tsc && vite build -c ./vite.config-build.js"
   },
   "devDependencies": {
     "@types/three": "^0.162.0",
