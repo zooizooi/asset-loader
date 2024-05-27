@@ -9,15 +9,17 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "dev": "vite -c ./vite.config-dev.js",
-    "build": "tsc && vite build -c ./vite.config-build.js"
+    "dev": "vite",
+    "build": "rollup -c"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/three": "^0.162.0",
     "@zooizooi/eslint-config": "^1.0.5",
+    "rollup-plugin-dts": "^6.1.1",
+    "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vite-plugin-dts": "^3.7.3"
+    "vite": "^5.2.0"
   },
   "dependencies": {
     "three": "^0.162.0"
