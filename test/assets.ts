@@ -4,7 +4,12 @@ const models: Asset[] = [
     {
         name: 'player2',
         path: './player.gltf',
-        type: 'gltf'
+        type: 'gltf',
+    },
+    {
+        name: 'human',
+        path: './human.glb',
+        type: 'gltf',
     },
 ];
 
@@ -12,7 +17,7 @@ const textures: Asset[] = [
     {
         name: 'image',
         path: './texture.png',
-        type: 'image'
+        type: 'image',
     },
 ];
 
@@ -22,7 +27,7 @@ const audio: Asset[] = [
 const assets = [
     ...models,
     ...textures,
-    ...audio
+    ...audio,
 ];
 
 export default assets;

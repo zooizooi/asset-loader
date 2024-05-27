@@ -7,7 +7,7 @@ export default class FileLoader {
         return new Promise((resolve: (asset: Asset) => void, reject) => {
             const loader = loaders[asset.type];
             if (loader) {
-                const instance = new loader();
+                const instance = new loader.class(loader.properties);
                 asset.status = STATUS_LOADING;
                 Logger.add('Loading: ' + asset.name);
                 instance.load(asset.path).then((data: unknown) => {

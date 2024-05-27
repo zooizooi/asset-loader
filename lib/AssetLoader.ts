@@ -10,9 +10,10 @@ export const STATUS_NOT_LOADED = 'NOT_LOADED';
 export const STATUS_LOADING = 'LOADING';
 export const STATUS_LOADED = 'LOADED';
 
-type Loader = new () => any;
+export type LoaderProperties = {[key: string]: any} | undefined;
+export type Loader = new (properties: LoaderProperties) => any;
 
-export const loaders: { [type: string]: Loader } = {};
+export const loaders: { [type: string]: { class: Loader, properties: LoaderProperties } } = {};
 
 export interface Asset {
     name: string,
@@ -27,8 +28,8 @@ export default class AssetLoader {
     public assets: Map<string, Asset> = new Map();
     public logger = Logger;
 
-    public static addLoader(type: string, loader: Loader) {
-        loaders[type] = loader;
+    public static addLoader(type: string, loaderClass: Loader, properties?: LoaderProperties) {
+        loaders[type] = { class: loaderClass, properties };
         return loaders;
     }
 
