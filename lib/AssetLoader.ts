@@ -56,6 +56,10 @@ export default class AssetLoader {
     }
 
     public get(name: string) {
+        return this.assets.get(name)?.data;
+    }
+
+    public getAsset(name: string) {
         return this.assets.get(name);
     }
 

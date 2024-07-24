@@ -18,7 +18,8 @@ const file = {
 
 assetLoader.load(file);
 
-assetLoader.loadList(assets).then((list) => {
+assetLoader.loadList(assets).then(() => {
+    const asset = assetLoader.getAsset('image');
     const image = assetLoader.get('image');
-    console.log(image?.data);
+    console.log(asset, image);
 });
