@@ -1,4 +1,4 @@
-import { Asset } from '/lib/AssetLoader';
+import { Asset } from '../lib/AssetLoader';
 
 const models: Asset[] = [
     {
