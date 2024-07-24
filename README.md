@@ -10,15 +10,17 @@ ni @zooizooi/asset-loader
 import AssetLoader, { GltfLoader } from '@zooizooi/asset-loader';
 ```
 
+### Add loader
+```js
+AssetLoader.addLoader('gltf', GltfLoader, { decoderPath: '/draco/' });
+```
+
 ### Initialize
 ```js
 const assetLoader = new AssetLoader();
 ```
 
-### Add loader
-```js
-AssetLoader.addLoader('gltf', GltfLoader, { decoderPath: '/draco/' });
-```
+
 
 #### Load file
 ```js
