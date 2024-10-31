@@ -32,8 +32,12 @@ export default class ListLoader {
     public load() {
         this.status = STATUS_LOADING;
         const promise = new Promise((resolve: Callback) => this.completeCallback = resolve);
-        const firstChunck = this.assets.slice(0, MAX_CONCURRENT);
-        firstChunck.forEach((asset: Asset) => this.loadFile(asset));
+        if (this.assets.length > 0) {
+            const firstChunck = this.assets.slice(0, MAX_CONCURRENT);
+            firstChunck.forEach((asset: Asset) => this.loadFile(asset));
+        } else {
+            if (this.completeCallback) this.completeCallback([]);
+        }
         return promise;
     }
 
