@@ -11,7 +11,6 @@ export default [
                 format: 'es',
             },
         ],
-
         external: ['three'],
         plugins: [typescript()],
     },
