@@ -9,11 +9,17 @@ export default class FileLoader {
             if (loader) {
                 const instance = new loader.class(loader.properties);
                 asset.status = STATUS_LOADING;
-                Logger.add('Loading: ' + asset.name);
+                Logger.add({
+                    type: 'loading',
+                    name: asset.name,
+                });
                 instance.load(asset.path).then((data: unknown) => {
                     asset.data = data;
                     asset.status = STATUS_LOADED;
-                    Logger.add('Loaded: ' + asset.name);
+                    Logger.add({
+                        type: 'loaded',
+                        name: asset.name,
+                    });
                     resolve(asset);
                 });
             } else {

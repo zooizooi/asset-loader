@@ -7,7 +7,7 @@ AssetLoader.addLoader('image', ImageLoader);
 
 const assetLoader = new AssetLoader();
 assetLoader.logger.listen((log) => {
-    console.log('🚚' + log);
+    console.log('🚚', log);
 });
 
 const file = {

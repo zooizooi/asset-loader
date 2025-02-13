@@ -1,4 +1,4 @@
-type Log = string;
+type Log = string | object;
 type Listener = (log: Log) => void;
 
 class Logger {
