@@ -10,9 +10,26 @@ ni @zooizooi/asset-loader
 import AssetLoader, { GltfLoader } from '@zooizooi/asset-loader';
 ```
 
-### Add loader
+### Available Loader Types
+
+#### GLTF Loader
 ```js
 AssetLoader.addLoader('gltf', GltfLoader, { decoderPath: '/draco/' });
+```
+
+#### Image Loader
+```js
+AssetLoader.addLoader('image', ImageLoader);
+```
+
+#### Texture Loader
+```js
+AssetLoader.addLoader('texture', TextureLoader);
+```
+
+#### JSON Loader
+```js
+AssetLoader.addLoader('json', JsonLoader);
 ```
 
 ### Initialize
