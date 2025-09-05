@@ -21,12 +21,21 @@ const textures: Asset[] = [
     },
 ];
 
+const json: Asset[] = [
+    {
+        name: 'json',
+        path: './test-data.json',
+        type: 'json',
+    },
+];
+
 const audio: Asset[] = [
 ];
 
 const assets = [
     ...models,
     ...textures,
+    ...json,
     ...audio,
 ];
 
